@@ -2,17 +2,30 @@ h1 {
     text-align: center;
 }
 
-/*div {*/
-/*    align-self: center;*/
-/*}*/
-
-fieldset {
+#products {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
     padding: 20px;
     margin: 25px;
+    width: 400px;
 }
+
+article button {
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
 
 button {
     margin: 20px;
@@ -20,13 +33,52 @@ button {
 }
 
 #reset-button {
+   padding: 10px 200px;
+}
+
+#formContainer {
+    position: relative;
+    text-align: center;
+    margin: 8% auto;
+    min-height: 60%;
+    width: 50%;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+    background: white;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+input {
+    margin: 8px;
+}
+
+
+#personal {
+    padding: 50px;
+}
+
+#delivery {
+    text-align: center;
+    padding: 5% 10%;
+}
+
+#conditions {
+    display: inline-block;
+}
+
+label {
+    display: block;
+}
+
+#checkbox {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    text-align: center;
+    padding: 25px;
+}
 
-    padding: 10px 200px;
+#error {
+    color: red;
 }
 
 
